@@ -33,6 +33,7 @@
     <description>Thrumbo wool's long fibers make it very strong. It is very warm.</description>
     <graphicData>
       <color>(233,233,233)</color>
+      <commonality>0.1</commonality>
     </graphicData>
     <stuffProps>
       <color>(233,233,233)</color>
@@ -48,5 +49,5 @@
       </statFactors>
     </stuffProps>
   </ThingDef>
-
+  
 </Defs>
