@@ -32,10 +32,10 @@
     <label>Thrumbo wool</label>
     <description>Thrumbo wool's long fibers make it very strong. It is very warm.</description>
     <graphicData>
-      <color>(233,233,233)</color>
-      <commonality>0.1</commonality>
+      <color>(233,233,233)</color>      
     </graphicData>
     <stuffProps>
+      <commonality>0.1</commonality>
       <color>(233,233,233)</color>
       <statOffsets>
         <ArmorRating_Heat>0.10</ArmorRating_Heat>
