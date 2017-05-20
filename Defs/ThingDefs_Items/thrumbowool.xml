@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <Beauty>-4</Beauty>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+
   <ThingDef ParentName="ResourceBase" Name="WoolBase" Abstract="True">
     <graphicData>
       <texPath>Things/Item/Resource/Wool</texPath>
@@ -8,7 +28,8 @@
     </graphicData>
     <statBases>
       <MaxHitPoints>90</MaxHitPoints>
-      <MarketValue>4.0</MarketValue>
+      <MarketValue>3</MarketValue>
+      <Mass>0.028</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>3.4</DeteriorationRate>
     </statBases>
@@ -17,7 +38,7 @@
       <categories>
         <li>Fabric</li>
       </categories>
-      <commonality>0.15</commonality>
+      <commonality>0.12</commonality>
       <statFactors>
         <ArmorRating_Electric>1.2</ArmorRating_Electric>
       </statFactors>
@@ -35,19 +56,19 @@
       <color>(233,233,233)</color>      
     </graphicData>
     <stuffProps>
-      <commonality>0.1</commonality>
       <color>(233,233,233)</color>
       <statOffsets>
-        <ArmorRating_Heat>0.10</ArmorRating_Heat>
+        <ArmorRating_Heat>0.20</ArmorRating_Heat>
         <ArmorRating_Electric>0.07</ArmorRating_Electric>
       </statOffsets>
+      <commonality>0.08</commonality>
       <statFactors>
         <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
         <ArmorRating_Heat>2.5</ArmorRating_Heat>
-        <Insulation_Cold>3.5</Insulation_Cold>
-        <Insulation_Heat>3.5</Insulation_Heat>
+        <Insulation_Cold>4</Insulation_Cold>
+        <Insulation_Heat>4</Insulation_Heat>
       </statFactors>
     </stuffProps>
   </ThingDef>
-  
+
 </Defs>
