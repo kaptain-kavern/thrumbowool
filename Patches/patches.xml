@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationInsert">
-		<xpath>//ThingDef[defName = "Thrumbo"]/race</xpath>
-		<value>
-			<comps>
-				<li Class="CompProperties_Shearable">
-					<woolDef>ThrumboWool</woolDef>
-					<shearIntervalDays>50</shearIntervalDays>
-					<woolAmount>330</woolAmount>
-				</li>
-			</comps>
-		</value>
-	</Operation> 
+    <Operation Class="PatchOperationInsert">
+        <xpath>/Defs/ThingDef[defName = "Thrumbo"]/race</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Shearable">
+                    <woolDef>ThrumboWool</woolDef>
+                    <shearIntervalDays>50</shearIntervalDays>
+                    <woolAmount>330</woolAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation> 
 </Patch>
